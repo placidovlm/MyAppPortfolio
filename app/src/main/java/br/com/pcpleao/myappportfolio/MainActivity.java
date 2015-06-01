@@ -7,6 +7,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 
@@ -40,69 +41,17 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /** Called when the user touches the button Reader */
-    public void runReader (View view) {
-        // Do something in response to button click
-        Context context = getApplicationContext();
-        CharSequence text = "Coming Soon : Reader";
-        int duration = Toast.LENGTH_SHORT;
+    /** Called when the user touches a button  */
+    public void onClickButton (View view) {
+        if (view instanceof Button) {
+            Button button = (Button) view;
+            Context context = getApplicationContext();
+            CharSequence text = button.getText();
+            int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+        }
     }
 
-    /** Called when the user touches the button Spotify Streamer */
-    public void runSpotify (View view) {
-        // Do something in response to button click
-        Context context = getApplicationContext();
-        CharSequence text = "Coming Soon : Spotify Streamer";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    /** Called when the user touches the button Football Scores */
-    public void runScores (View view) {
-        // Do something in response to button click
-        Context context = getApplicationContext();
-        CharSequence text = "Coming Soon : Football Scores";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    /** Called when the user touches the button Library */
-    public void runLibrary (View view) {
-        // Do something in response to button click
-        Context context = getApplicationContext();
-        CharSequence text = "Coming Soon : Library";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    /** Called when the user touches the button Buid it Bigger */
-    public void runBigger (View view) {
-        // Do something in response to button click
-        Context context = getApplicationContext();
-        CharSequence text = "Coming Soon : Build It Bigger";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
-
-    /** Called when the user touches the button Capstone */
-    public void runCapstone (View view) {
-        // Do something in response to button click
-        Context context = getApplicationContext();
-        CharSequence text = "Coming Soon : Capstone";
-        int duration = Toast.LENGTH_SHORT;
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-    }
 }

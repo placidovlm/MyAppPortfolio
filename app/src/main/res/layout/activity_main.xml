@@ -11,47 +11,45 @@
         android:layout_height="40dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/title_main_page"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:id="@+id/textView_title"
         android:layout_gravity="center_horizontal"
         android:gravity="center_vertical" />
 
     <Button
         style="@style/PortfolioButtom"
-        android:text="Reader"
-        android:id="@+id/button5"
-        android:onClick="runReader" />
+        android:text="@string/button_reader_text"
+        android:id="@+id/button_reader"
+        android:onClick="onClickButton" />
 
     <Button
         style="@style/PortfolioButtom"
-        android:text="Spotify Streamer"
+        android:text="@string/button_spotify_text"
         android:id="@+id/button_spotify"
-        android:onClick="runSpotify" />
+        android:onClick="onClickButton" />
 
     <Button
         style="@style/PortfolioButtom"
-        android:text="Football Scores"
-        android:id="@+id/button2"
-        android:onClick="runScores" />
+        android:text="@string/button_scores_text"
+        android:id="@+id/button_scores"
+        android:onClick="onClickButton" />
 
     <Button
         style="@style/PortfolioButtom"
-        android:text="Library"
-        android:id="@+id/button3"
-        android:onClick="runLibrary" />
+        android:text="@string/button_library_text"
+        android:id="@+id/button_library"
+        android:onClick="onClickButton" />
 
     <Button
         style="@style/PortfolioButtom"
-        android:text="Build It Bigger"
-        android:id="@+id/button4"
-        android:onClick="runBigger" />
+        android:text="@string/button_bigger_text"
+        android:id="@+id/button_bigger"
+        android:onClick="onClickButton" />
 
     <Button
         style="@style/AccentPortfolioButtom"
-        android:text="Capstone "
-        android:id="@+id/button6"
-        android:onClick="runCapstone"
+        android:text="@string/button_capstone_text"
+        android:id="@+id/button_capstone"
+        android:onClick="onClickButton"
         android:nestedScrollingEnabled="true" />
 
 </LinearLayout>
